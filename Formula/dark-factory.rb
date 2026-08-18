@@ -5,7 +5,8 @@
 class DarkFactory < Formula
   desc "Terminal-first runtime for persistent coding-agent teams"
   homepage "https://github.com/baziyer/dark-factory"
-  version "0.2.0"
+  url "https://github.com/baziyer/dark-factory/releases/download/v0.2.0/latest.json"
+  sha256 "29ed79d502f07976d8f50ab7fa3793152f1fc09f4c645eeb9173354ac12f62eb"
   license "MIT"
 
   depends_on :macos
