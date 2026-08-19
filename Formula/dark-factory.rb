@@ -5,20 +5,20 @@
 class DarkFactory < Formula
   desc "Terminal-first runtime for persistent coding-agent teams"
   homepage "https://github.com/baziyer/dark-factory"
-  url "https://github.com/baziyer/dark-factory/releases/download/v0.2.3/latest.json"
-  sha256 "b5defd08873c92fc873832641f20a178f8bbff0f6769101cd794064fdd01f20c"
+  url "https://github.com/baziyer/dark-factory/releases/download/v0.2.4/latest.json"
+  sha256 "ecbda37a651e7c2fabb92a9b764ac3832381d42bacb4c4f45dbca4e24f704e6f"
   license "MIT"
 
   depends_on :macos
 
   resource "binaries" do
     on_arm do
-      url "https://github.com/baziyer/dark-factory/releases/download/v0.2.3/dark-factory-v0.2.3-aarch64-apple-darwin.tar.gz"
-      sha256 "b9b52d388f61a0930cd03c9ebaf4f63baf3b8ff8eff5f3fa095ef1300b67a7a8"
+      url "https://github.com/baziyer/dark-factory/releases/download/v0.2.4/dark-factory-v0.2.4-aarch64-apple-darwin.tar.gz"
+      sha256 "ca4545971384b161f7b96252b97379751240cf34f1cbc182c0e032ce33d928f6"
     end
     on_intel do
-      url "https://github.com/baziyer/dark-factory/releases/download/v0.2.3/dark-factory-v0.2.3-x86_64-apple-darwin.tar.gz"
-      sha256 "b8d4d93eb801b447f8ec2632db4a140dd0b0d5e39ba8d4c91b6e580f329d9d7c"
+      url "https://github.com/baziyer/dark-factory/releases/download/v0.2.4/dark-factory-v0.2.4-x86_64-apple-darwin.tar.gz"
+      sha256 "eca7bf4bf134901c800e39d6cfdacd15866f8d72c9b86107acbb70bc565266d8"
     end
   end
 
@@ -40,7 +40,7 @@ class DarkFactory < Formula
 
       `brew uninstall dark-factory` removes only the bootstrap commands. The
       launchd job, active runtime, and state under ~/.dark-factory remain. Follow
-      https://github.com/baziyer/dark-factory/blob/v0.2.3/launchd/README.md#uninstall to stop
+      https://github.com/baziyer/dark-factory/blob/v0.2.4/launchd/README.md#uninstall to stop
       sessions and unload the service safely before removing anything else.
     EOS
   end
